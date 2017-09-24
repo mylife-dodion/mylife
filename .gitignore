@@ -1,0 +1,9 @@
+.DS_Store
+/.idea
+/mylife.iml
+/demo/demo.iml
+/stats/stats.iml
+/logs
+/docs
+/demo/target
+/stats/target
