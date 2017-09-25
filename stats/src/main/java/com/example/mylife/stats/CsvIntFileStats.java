@@ -68,12 +68,7 @@ public class CsvIntFileStats {
         sumOfIntegers = sumOfIntegers + currentInteger;
         this.totalNumberOfIntegers = this.totalNumberOfIntegers + 1;
         // Update map to track frequency of integer
-        Integer frequency = integerMap.get(currentInteger);
-        if (frequency == null) {
-          integerMap.put(currentInteger, 1);
-        } else {
-          integerMap.put(currentInteger, frequency + 1);
-        }
+        integerMap.merge(currentInteger, 1, (a, b) -> a + b);
       }
       // Sanity check because if all went well there should be no items left to process. However,
       // if items are left then they must be other than 'int' and this suggests a corrupted file.
