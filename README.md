@@ -28,7 +28,7 @@ status of being most common so this is returned as a collection._)
 The library can be introduced as a dependency to any Maven based project by updating the pom.xml file as has been done in the Demo program e.g. 
 ```
  <dependencies>
- ...
+    ...
     <dependency>
       <groupId>com.example</groupId>
       <artifactId>stats</artifactId>
