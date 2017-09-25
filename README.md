@@ -25,6 +25,19 @@ containing the following information about the file's contents:
 * Most common integer. (_Of course, more than one integer may share the 
 status of being most common so this is returned as a collection._)
 
+The library can be introduced as a dependency to any Maven based project by updating the pom.xml file as has been done in the Demo program e.g. 
+```
+ <dependencies>
+ ...
+    <dependency>
+      <groupId>com.example</groupId>
+      <artifactId>stats</artifactId>
+      <version>1.0.0.0</version>
+    </dependency>
+    ...
+  </dependencies>
+  ```
+
 #### demo module
 
 This contains a minimal executable java program (fat jar) to demonstrate the use 
