@@ -11,7 +11,7 @@ public class Demo {
   /**
    * Main entry point for program to process csv file to demonstrate the CsvIntFileStats class.
    *
-   * @param args path to the selected csv file to be processed
+   * @param args first argument args[0] is the path to the selected csv file to be processed
    */
   public static void main(String[] args) {
     System.out.println("Demo program is processing csv file " + args[0] + " ...");
